@@ -1,0 +1,84 @@
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 5px;
+}
+
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+body.correct {
+  background-color: greenyellow;
+}
+
+body.wrong {
+  background-color: red;
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  border: 1px solid blue;
+  background-color: blue;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
+  color: white;
+}
+
+.btn.wrong {
+  color: red;
+}
+
+.start-btn,
+.next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
